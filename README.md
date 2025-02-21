@@ -26,7 +26,7 @@ CV Builder is an open-source application developed with React and Vite that allo
 - ✅ Skills.
 - ✅ Languages.
 - ✅ Certifications.
-- [ ] Implement **Docker** and **Docker Compose**.
+- ✅ Implement **Docker** and **Docker Compose**.
 - [ ] Add **Personal References** component.
 - [ ] Improve **final result viewer** to handle proper page breaks.
 - [ ] Enhance UI/UX for better usability.
@@ -45,6 +45,26 @@ yarn install  # or npm install
 
 # Run in development mode
 yarn dev  # or npm run dev
+```
+
+## 📦 Docker & Docker compose usage
+```bash
+# Clone the repository
+git clone https://github.com/dvicuna98/resume-builder.git
+cd resume-builder
+
+#Run with docker compose
+docker-compose up --build 
+
+#if first time running it because of volumes you may enter in 
+#the container and run npm install
+docker-compose exec app sh
+npm i
+#Run inside the container
+npm run dev -- --host
+
+#if you already have the node modules folder in the project 
+#you can un comment command section of the docker-compose file
 ```
 
 ## 📜 License

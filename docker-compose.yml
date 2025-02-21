@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dependency-base
+    working_dir: /app
+    container_name: resume-builder-container
+#    command: npm run dev -- --host # this can fail the first time because of volumes (at first time there isn't node modules)
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./:/app
+    ports:
+      - "${APP_DEV_PORT:-5173}:5173"
+      - "${APP_PROD_PORT:-8080}:80"

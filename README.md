@@ -7,6 +7,9 @@ CV Builder is an open-source application developed with React and Vite that allo
 - **Left panel:** Real-time CV preview.
 - **Top section:** Button to download the generated CV.
 
+## CV builder example :D
+- [Test cv builder](https://dvicuna98.github.io/resume-builder/) [https://dvicuna98.github.io/resume-builder/](https://dvicuna98.github.io/resume-builder/)
+
 ## 🚀 Features
 - Intuitive interface for organizing CV information.
 - Real-time preview of the CV.

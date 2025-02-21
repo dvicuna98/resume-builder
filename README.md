@@ -41,7 +41,7 @@ CV Builder is an open-source application developed with React and Vite that allo
 ```bash
 # Clone the repository
 git clone https://github.com/dvicuna98/resume-builder.git
-cd cv-builder
+cd resume-builder
 
 # Install dependencies
 yarn install  # or npm install
